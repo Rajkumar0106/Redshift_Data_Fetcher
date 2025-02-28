@@ -5,13 +5,13 @@ from io import BytesIO
 import openai
 
 # OpenAI API Configuration
-openai_client = openai.Client(api_key="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")
+openai_client = openai.Client(api_key="")
 
 # Redshift environment configurations
 environments = {
-    "Migration": {"host": "tcl-it-edw-redshift-prod-03.cktijfqqwie2.ap-south-1.redshift.amazonaws.com", "database": "rsdev01", "user": "e1773545", "password": "Sq6Q@Dj_S1234"},
-    "Modernization": {"host": "tcl-it-edw-redshift-prod01.cktijfqqwie2.ap-south-1.redshift.amazonaws.com", "database": "rs_edw_db", "user": "e1773545", "password": "Sq6Q@Dj_S1234"},
-    "IBD": {"host": "tcl-it-edw-redshift-ibd-prod01.cvbqy22bwoo4.ap-south-1.redshift.amazonaws.com", "database": "rs_edw_prd", "user": "e1774547", "password": "R@jkuma7$25"}
+    "Migration": {"host": "", "database": "rsdev01", "user": "", "password": ""},
+    "Modernization": {"host": "", "database": "rs_edw_db", "user": "", "password": ""},
+    "IBD": {"host": "", "database": "rs_edw_prd", "user": "", "password": ""}
 }
 
 st.set_page_config(layout="wide", page_title="Redshift Fetcher", page_icon="📊")
